@@ -1,7 +1,8 @@
 
+
 const {test,expect} = require('@playwright/test');
 const {POmanager} = require('../pageobjects/POmanager');
-const { LoginPage } = require('../pageobjects/loginPage');
+const { LoginPage } = require('../pageobjects/LoginPage');
 const { DashboardPage } = require('../pageobjects/DashboardPage');
 const {CartPage} = require('../pageobjects/CartPage');
 const dataset = JSON.parse(JSON.stringify(require('../TestData/qatestdata.json')));
@@ -32,48 +33,49 @@ test(`WebApplicationTest - ${data.productName}`,async({page})=>{
 
 
 
+
  /**  
-//select option from dropdown
-await page.locator("[placeholder*='Country']").pressSequentially("ind",{ delay: 150 });
-const countryDropdown = await page.locator(".ta-results");
-await countryDropdown.waitFor();
-const optionsCount = await countryDropdown.locator("button").count();
+ //select option from dropdown
+ await page.locator("[placeholder*='Country']").pressSequentially("ind",{ delay: 150 });
+ const countryDropdown = await page.locator(".ta-results");
+ await countryDropdown.waitFor();
+ const optionsCount = await countryDropdown.locator("button").count();
 
-for(let i=0 ; i < optionsCount ; ++i)
-{
-    const text = await countryDropdown.locator("button").nth(i).textContent();
-    if (text === " India")
-    {
-        await countryDropdown.locator("button").nth(i).click();
-        break;
-    }
-}
-expect(page.locator(".user__name [type='text']").first()).toHaveText("sampletest12@gmail.com");
-await page.locator("(//input[@type='text'])[2]").fill("123");
-await page.locator("(//input[@type='text'])[3]").fill("Sample Test");
-await page.locator("text=Place Order ").click();
+ for(let i=0 ; i < optionsCount ; ++i)
+ {
+     const text = await countryDropdown.locator("button").nth(i).textContent();
+     if (text === " India")
+     {
+         await countryDropdown.locator("button").nth(i).click();
+         break;
+     }
+ }
+ expect(page.locator(".user__name [type='text']").first()).toHaveText("sampletest12@gmail.com");
+ await page.locator("(//input[@type='text'])[2]").fill("123");
+ await page.locator("(//input[@type='text'])[3]").fill("Sample Test");
+ await page.locator("text=Place Order ").click();
 
-//validate the thank you for the order
-const orderPlaced = await page.locator(".hero-primary");
-await expect(orderPlaced).toHaveText(" Thankyou for the order. ");
-const orderMessage = await orderPlaced.innerText();
-console.log(orderMessage);
+ //validate the thank you for the order
+ const orderPlaced = await page.locator(".hero-primary");
+ await expect(orderPlaced).toHaveText(" Thankyou for the order. ");
+ const orderMessage = await orderPlaced.innerText();
+ console.log(orderMessage);
 
-const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
-   console.log(orderId);
- 
+ const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
+    console.log(orderId);
+  
    await page.locator("button[routerlink*='myorders']").click();
    await page.locator("tbody").waitFor();
    const rows = await page.locator("tbody tr");
  
  
-   for (let i = 0; i < await rows.count(); ++i) {
-      const rowOrderId = await rows.nth(i).locator("th").textContent();
-      if (orderId.includes(rowOrderId)) {
-         await rows.nth(i).locator("button").first().click();
-         break;
-      }
-   }
-   const orderIdDetails = await page.locator(".col-text").textContent();
-   expect(orderId.includes(orderIdDetails)).toBeTruthy();
-*/
+ for (let i = 0; i < await rows.count(); ++i) {
+    const rowOrderId = await rows.nth(i).locator("th").textContent();
+    if (orderId.includes(rowOrderId)) {
+       await rows.nth(i).locator("button").first().click();
+       break;
+    }
+ }
+ const orderIdDetails = await page.locator(".col-text").textContent();
+ expect(orderId.includes(orderIdDetails)).toBeTruthy();
+ */
