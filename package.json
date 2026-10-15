@@ -1,0 +1,21 @@
+{
+  "name": "automationplaywrightvina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "smoke": "npx playwright test -g @smoke --project=chromium",
+    "regression": "npx playwright test -g @regression",
+    "Webtests": "npx playwright test --grep @Web --project=chromium --reporter=line,allure-playwright"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.5.0",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.13.0"
+  }
+}
