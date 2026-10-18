@@ -1,4 +1,5 @@
 const {test,expect} = require('@playwright/test');
+
 //we use {} to pick only test property from all properties 
 // of {@playwright/test}: destructuring
 
