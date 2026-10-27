@@ -28,7 +28,7 @@ const config = ({
         name: 'firefox',
         use: {
         browserName: 'firefox',
-        headless: false,
+        headless: true,
         screenshot: 'only-on-failure', /*screenshot options: 'on''off''retain-on-failure''on-first-retry'*/
         trace: 'on' /* trace options: 'on-first-retry','on-all-retries', 'off','on','retain-on-failure' */
             }
@@ -38,7 +38,7 @@ const config = ({
         name: 'webkit',
         use: {
         browserName: 'webkit',
-        headless: false,
+        headless: true,
         screenshot: 'only-on-failure', /*screenshot options: 'on''off''retain-on-failure''on-first-retry'*/
         trace: 'on',/* trace options: 'on-first-retry','on-all-retries', 'off','on','retain-on-failure' */
         //...devices['iPhone 12']  //will open browser in mobile
