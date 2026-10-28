@@ -1,0 +1,3 @@
+[     911ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.theqaindia.com/script.js:0
+[     917ms] NotSupportedError: Failed to execute 'attachShadow' on 'Element': Shadow root cannot be created on a host which already hosts a shadow tree.
+    at https://www.theqaindia.com/assets/codes/script.js:199:25

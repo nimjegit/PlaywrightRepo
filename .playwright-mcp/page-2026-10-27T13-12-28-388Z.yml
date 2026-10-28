@@ -1,0 +1,260 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link [ref=e3] [cursor=pointer]:
+      - /url: index.html
+      - img "QA INDIA" [ref=e4]
+    - navigation [ref=e5]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "HOME" [ref=e8] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e9]:
+          - link "PW + SELENIUM + AI" [ref=e10] [cursor=pointer]:
+            - /url: playwright-selenium.html
+        - listitem [ref=e11]:
+          - link "PLAYWRIGHT JS/TS" [ref=e12] [cursor=pointer]:
+            - /url: playwright-js-ts.html
+        - listitem [ref=e13]:
+          - link "AI & LLM" [ref=e14] [cursor=pointer]:
+            - /url: ai-llm.html
+        - listitem [ref=e15]:
+          - link "PRACTICE" [ref=e16] [cursor=pointer]:
+            - /url: practice_platform.html
+        - listitem [ref=e17]:
+          - link "SUCCESS STORIES" [ref=e18] [cursor=pointer]:
+            - /url: success.html
+        - listitem [ref=e19]:
+          - link "ABOUT" [ref=e20] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e21]:
+          - button "Toggle Theme" [ref=e22] [cursor=pointer]
+  - generic [ref=e26]:
+    - 'link "Connect to the trainer for the upcoming batches: 9380874255" [ref=e27] [cursor=pointer]':
+      - /url: https://wa.me/919380874255
+    - 'link "Connect to the trainer for the upcoming batches: 9380874255" [ref=e30] [cursor=pointer]':
+      - /url: https://wa.me/919380874255
+  - main [ref=e33]:
+    - generic [ref=e34]:
+      - generic [ref=e35]: GLOBAL SDET PRACTICE HUB
+      - heading "Interactive Automation Practice Labs." [level=1] [ref=e36]
+      - paragraph [ref=e37]: Real-world test targets for Playwright, Selenium, and Cypress. Practice locators, dynamic elements, web tables, shadow DOM, and API error simulations.
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]: LAB 01
+          - generic [ref=e43]: ELEMENTS
+        - heading "Element Lab" [level=3] [ref=e44]
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: FULL NAME
+            - textbox "Enter Name" [ref=e48]
+          - generic [ref=e49]:
+            - generic [ref=e50]: EMAIL ADDRESS
+            - textbox "Enter Email" [ref=e51]
+          - generic [ref=e52]:
+            - generic [ref=e53]: PHONE NUMBER
+            - textbox "Enter Phone" [ref=e54]
+          - generic [ref=e55]:
+            - generic [ref=e56]: ADDRESS (TEXTAREA)
+            - textbox "Enter Address..." [ref=e57]
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]: GENDER
+              - generic [ref=e61]:
+                - radio "MALE" [ref=e62]
+                - text: MALE
+              - generic [ref=e63]:
+                - radio "FEMALE" [ref=e64]
+                - text: FEMALE
+            - generic [ref=e65]:
+              - generic [ref=e66]: DAYS (CHECKBOXES)
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - checkbox "SUN" [ref=e69]
+                  - text: SUN
+                - generic [ref=e70]:
+                  - checkbox "MON" [ref=e71]
+                  - text: MON
+                - generic [ref=e72]:
+                  - checkbox "TUE" [ref=e73]
+                  - text: TUE
+                - generic [ref=e74]:
+                  - checkbox "WED" [ref=e75]
+                  - text: WED
+          - generic [ref=e76]:
+            - generic [ref=e77]: COUNTRY (SELECT)
+            - combobox [ref=e78]:
+              - option "India" [selected]
+              - option "USA"
+              - option "UK"
+          - generic [ref=e79]:
+            - generic [ref=e80]: COLORS (MULTI-SELECT)
+            - listbox [ref=e81]:
+              - option "Red" [ref=e82]
+              - option "Blue" [ref=e83]
+              - option "Green" [ref=e84]
+              - option "Yellow" [ref=e85]
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - generic [ref=e88]: LAB 02
+          - generic [ref=e89]: INTERACTIONS
+        - heading "Interaction Lab" [level=3] [ref=e90]
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: DATE PICKER 1 (MM/DD/YYYY)
+            - textbox [ref=e94]
+          - generic [ref=e95]:
+            - generic [ref=e96]: DATE RANGE PICKER
+            - generic [ref=e97]:
+              - textbox [ref=e98]
+              - textbox [ref=e99]
+          - generic [ref=e100]:
+            - generic [ref=e101]: RANGE SLIDER (DYNAMIC VALUE)
+            - generic [ref=e102]:
+              - slider [ref=e103]: "50"
+              - generic [ref=e104]: "50"
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]: DOUBLE CLICK (JS)
+              - textbox [ref=e108]: Hello World!
+              - textbox "Result..." [ref=e109]
+              - button "COPY TEXT" [ref=e110] [cursor=pointer]
+            - generic [ref=e111]:
+              - generic [ref=e112]: MOUSE HOVER
+              - button "POINT ME" [ref=e114] [cursor=pointer]
+          - generic [ref=e115]:
+            - generic [ref=e116]: ALERTS & POPUPS
+            - generic [ref=e117]:
+              - button "SIMPLE" [ref=e118] [cursor=pointer]
+              - button "CONFIRM" [ref=e119] [cursor=pointer]
+              - button "PROMPT" [ref=e120] [cursor=pointer]
+              - button "POPUP" [ref=e121] [cursor=pointer]
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e124]: LAB 03
+          - generic [ref=e125]: DATA TABLES
+        - heading "Data Lab" [level=3] [ref=e126]
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - generic [ref=e129]: UPLOAD FILES (SINGLE/MULTI)
+            - button "Choose File" [ref=e130]
+            - button "UPLOAD ARTIFACTS" [ref=e131] [cursor=pointer]
+          - generic [ref=e132]:
+            - generic [ref=e133]: STATIC WEB TABLE
+            - table [ref=e135]:
+              - rowgroup [ref=e136]:
+                - row [ref=e137]:
+                  - columnheader "ID" [ref=e138]
+                  - columnheader "SKILL" [ref=e139]
+                  - columnheader "LEVEL" [ref=e140]
+              - rowgroup [ref=e141]:
+                - row [ref=e142]:
+                  - cell "01" [ref=e143]
+                  - cell "Selenium" [ref=e144]
+                  - cell "Expert" [ref=e145]
+                - row [ref=e146]:
+                  - cell "02" [ref=e147]
+                  - cell "Playwright" [ref=e148]
+                  - cell "Pro" [ref=e149]
+          - generic [ref=e150]:
+            - generic [ref=e151]: DYNAMIC STATUS TABLE
+            - textbox "Search components..." [ref=e152]
+            - table [ref=e154]:
+              - rowgroup [ref=e155]:
+                - row [ref=e156]:
+                  - columnheader "ID" [ref=e157]
+                  - columnheader "COMPONENT" [ref=e158]
+                  - columnheader "VERSION" [ref=e159]
+                  - columnheader "STATUS" [ref=e160]
+              - rowgroup [ref=e161]:
+                - row [ref=e162]:
+                  - cell "101" [ref=e163]
+                  - cell "Selenium Engine" [ref=e164]
+                  - cell "4.12" [ref=e165]
+                  - cell "PASSED" [ref=e166]
+                - row [ref=e167]:
+                  - cell "102" [ref=e168]
+                  - cell "Playwright Core" [ref=e169]
+                  - cell "1.38" [ref=e170]
+                  - cell "PASSED" [ref=e171]
+                - row [ref=e172]:
+                  - cell "103" [ref=e173]
+                  - cell "Cypress Runner" [ref=e174]
+                  - cell "12.0" [ref=e175]
+                  - cell "FAILED" [ref=e176]
+                - row [ref=e177]:
+                  - cell "104" [ref=e178]
+                  - cell "Appium Driver" [ref=e179]
+                  - cell "2.1.0" [ref=e180]
+                  - cell "PASSED" [ref=e181]
+          - generic [ref=e182]:
+            - generic [ref=e183]: PAGINATION VIEW
+            - table [ref=e185]:
+              - rowgroup [ref=e186]:
+                - row [ref=e187]:
+                  - columnheader "NAME" [ref=e188]
+                  - columnheader "PRICE" [ref=e189]
+                  - columnheader "SEL" [ref=e190]
+              - rowgroup [ref=e191]:
+                - row [ref=e192]:
+                  - cell "Product A" [ref=e193]
+                  - cell "$10" [ref=e194]
+                  - cell [ref=e195]:
+                    - checkbox [ref=e196]
+            - generic [ref=e197]:
+              - button "1" [ref=e198] [cursor=pointer]
+              - button "2" [ref=e199] [cursor=pointer]
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - generic [ref=e202]: LAB 04
+          - generic [ref=e203]: ADVANCED
+        - heading "Advanced Lab" [level=3] [ref=e204]
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - generic [ref=e207]: BROKEN LINKS (CLICKABLE ERRORS)
+            - generic [ref=e208]:
+              - link "400 Bad" [ref=e209] [cursor=pointer]:
+                - /url: error.html?code=400
+              - link "401 Unauth" [ref=e210] [cursor=pointer]:
+                - /url: error.html?code=401
+              - link "403 Forbid" [ref=e211] [cursor=pointer]:
+                - /url: error.html?code=403
+              - link "404 Found" [ref=e212] [cursor=pointer]:
+                - /url: error.html?code=404
+              - link "408 Time" [ref=e213] [cursor=pointer]:
+                - /url: error.html?code=408
+              - link "500 Server" [ref=e214] [cursor=pointer]:
+                - /url: error.html?code=500
+              - link "503 Service" [ref=e215] [cursor=pointer]:
+                - /url: error.html?code=503
+          - generic [ref=e216]:
+            - generic [ref=e217]: DRAG & DROP ELEMENT
+            - generic [ref=e218]:
+              - generic [ref=e219]: ⠿ DRAG ME
+              - generic [ref=e220]: DROP HERE
+          - generic [ref=e221]:
+            - generic [ref=e222]: SHADOW DOM NODE
+            - generic [ref=e223]:
+              - generic [ref=e224]: I AM IN SHADOW DOM
+              - textbox "Test Shadow DOM Input..." [ref=e225]
+          - generic [ref=e226]:
+            - generic [ref=e227]: SVG INTERACTIVE ELEMENTS
+            - generic [ref=e228]:
+              - img [ref=e229] [cursor=pointer]
+              - img [ref=e231] [cursor=pointer]
+              - generic [ref=e233]: (Click SVG shapes to test)
+          - generic [ref=e234]:
+            - generic [ref=e235]: SCROLLING DROPDOWN
+            - combobox [ref=e236]:
+              - option "OPTION 01 - SELECTOR TEST" [selected]
+              - option "OPTION 02 - SELENIUM WEBDRIVER"
+              - option "OPTION 03 - PLAYWRIGHT LOCATOR"
+              - option "OPTION 04 - CYPRESS COMMAND"
+              - option "OPTION 05 - APPIUM MOBILE"
+              - option "OPTION 06 - REST ASSURED API"
+              - option "OPTION 07 - POSTMAN COLLECTION"
+              - option "OPTION 08 - JMETER PERFORMANCE"
+  - contentinfo [ref=e237]:
+    - paragraph [ref=e238]: © 2026 QA INDIA. Built for High-Performance QA Automation Engineers.
+  - link "Contact on WhatsApp" [ref=e239] [cursor=pointer]:
+    - /url: https://wa.me/919380874255

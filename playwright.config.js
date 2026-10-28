@@ -7,7 +7,7 @@ const config = ({
   retries: 1,
   /* Run tests in files in parallel */
   fullyParallel: false,
-  worker: 3,
+  workers: 3,
   timeout: 50*1000,
   reporter: [['html'], ['allure-playwright']],
     
