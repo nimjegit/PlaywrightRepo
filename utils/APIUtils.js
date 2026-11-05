@@ -1,7 +1,6 @@
 class APIUtils 
 {
-    
-    
+
     constructor(apiContext, loginPayLoad) 
     {
         this.apiContext = apiContext;
@@ -14,7 +13,6 @@ class APIUtils
         }); // 200, 201
         const loginResponseJson = await loginResponse.json();
         const token = loginResponseJson.token;
-        console.log(token);
         return token;
     }
  
@@ -38,4 +36,4 @@ class APIUtils
     }
 }
 
-module.exports = APIUtils;
+module.exports = {APIUtils};

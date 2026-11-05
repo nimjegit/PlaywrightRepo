@@ -1,5 +1,5 @@
 
-const {test,expect} = require('@playwright/test')
+const {test,expect,request} = require('@playwright/test')
 const {APIUtils} = require('../utils/APIUtils')
 let token;
 let orderId;
@@ -14,7 +14,7 @@ test.beforeAll(async() =>
     response =  await apiUtils.createOrder(orderPayLoad);
 })
 
-test('APITestCase',async({page}) =>
+test('APITestCase',{tag:'@API'},async({page}) =>
 {
 
  await page.addInitScript(value => {
