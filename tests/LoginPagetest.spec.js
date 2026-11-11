@@ -2,17 +2,11 @@
 
 const {test,expect} = require('@playwright/test');
 const {POmanager} = require('../pageobjects/POmanager');
-const { LoginPage } = require('../pageobjects/LoginPage');
-const { DashboardPage } = require('../pageobjects/DashboardPage');
-const {CartPage} = require('../pageobjects/CartPage');
 const dataset = JSON.parse(JSON.stringify(require('../TestData/qatestdata.json')));
 
 for(const data of dataset){
-test(`WebApplicationTest - ${data.productName}`,async({page})=>{
+test(`WebApplicationTest - ${data.productName}`,{tag:'@pageobjecttest'},async({page})=>{
 
-    //const productName= 'ZARA COAT 3';
-    //const username ="sampletest12@gmail.com";
-    //const password = "Test@123";
    const pomanager = new POmanager(page);
    const products = page.locator(".card-body");
    await pomanager.loginPage.goto();
