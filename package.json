@@ -8,7 +8,7 @@
     "regression": "npx playwright test -g @regression",
     "Webtests": "npx playwright test --grep @Web --project=chromium --reporter=line,allure-playwright",
     "API": "npx playwright test -g @API",
-    "pageobjecttest": "npx playwright test -g @pageobjecttest"
+    "pageobjecttest": "npx playwright test -g @pageobjecttest --project=chromium"
   },
   "keywords": [],
   "author": "",
