@@ -34,16 +34,16 @@ const config = ({
             }
       },
   
-      {
-        name: 'webkit',
-        use: {
-        browserName: 'webkit',
-        headless: true,
-        screenshot: 'only-on-failure', /*screenshot options: 'on''off''retain-on-failure''on-first-retry'*/
-        trace: 'on',/* trace options: 'on-first-retry','on-all-retries', 'off','on','retain-on-failure' */
+      //{
+      //  name: 'webkit',
+      //  use: {
+      //  browserName: 'webkit',
+      //  headless: true,
+      //  screenshot: 'only-on-failure', /*screenshot options: 'on''off''retain-on-failure''on-first-retry'*/
+      //  trace: 'on',/* trace options: 'on-first-retry','on-all-retries', 'off','on','retain-on-failure' */
         //...devices['iPhone 12']  //will open browser in mobile
-          }
-      }
+      //      }
+      //} 
   
       /* Test against mobile viewports. */
       // {

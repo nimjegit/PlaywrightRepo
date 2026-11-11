@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "smoke": "npx playwright test -g @smoke --project=chromium",
+    "smoke": "npx playwright test -g @smoke --project=chromium --project=firefox",
     "regression": "npx playwright test -g @regression",
     "Webtests": "npx playwright test --grep @Web --project=chromium --reporter=line,allure-playwright",
     "API": "npx playwright test -g @API",
